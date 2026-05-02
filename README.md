@@ -130,7 +130,49 @@ Scenario 3 line colors by function bit:
   - Baud: `115200`
   - Slave ID: `1`
 
-For deeper technical details about FATEK register maps, address models, and protocol-level behavior, please consult the official FATEK manuals.
+For deeper technical details about FATEK register maps, addressing, and protocol behaviour, use the manuals below (local PDFs under `Manuale/` when you have them in your copy of the project) and the official references.
+
+### Official / general references (web)
+
+- [Modbus Organization — specifications](https://modbus.org/specs.php) — Modbus Application Protocol (function codes, PDU framing).
+- Check **FATEK** official documentation / downloads on [fatek.com](https://www.fatek.com/en/) for the latest PLC manuals for your CPU series (register maps may vary by model).
+
+### FATEK PLC communication (local PDFs)
+
+| Document | Path (relative to repo root) |
+|----------|-------------------------------|
+| PLC binary communication protocol (user manual, EN) | [`Manuale/08_M_PLC_Binary_Communication_Protocol_User_Manual_en.pdf`](Manuale/08_M_PLC_Binary_Communication_Protocol_User_Manual_en.pdf) |
+| FB / FBs reference (B1 / B1z) | [`Manuale/FATEK_FB_FBs_B1_B1z.pdf`](Manuale/FATEK_FB_FBs_B1_B1z.pdf) |
+| WinProladder manual (EN) | [`Manuale/Comunicare/FATEK manuals/WinProladder_Manual_en.pdf`](Manuale/Comunicare/FATEK%20manuals/WinProladder_Manual_en.pdf) |
+| Supplement chapters | [`Manuale/Chapter_12.pdf`](Manuale/Chapter_12.pdf), [`Manuale/Appendix1.pdf`](Manuale/Appendix1.pdf), [`Manuale/Apendix 2.pdf`](Manuale/Apendix%202.pdf) |
+
+These explain how FATEK exposes coils/registers over communication and how addressing relates to ladder programming tools.
+
+### Modbus RTU — messages, functions, RS485 (local PDFs)
+
+Folder: [`Manuale/Comunicare/Curs ModBus RTU/`](Manuale/Comunicare/Curs%20ModBus%20RTU/)
+
+| Topic | File |
+|-------|------|
+| Overview / history | `Modbus+History+and+Overview.pdf` |
+| RTU vs ASCII | `Modbus+RTU+vs+ASCII.pdf` |
+| Message structure | `Modbus+Message+Structure.pdf` |
+| Function codes | `Modbus+Function+Codes.pdf` |
+| Addressing | `Modbus+Addressing.pdf` |
+| Serial / transmission | `Modbus+Serial+Transmission+Modes.pdf` |
+| RS485 physical layer intro | `RS485+Serial+Communication+Standard.pdf` |
+| Troubleshooting | `Modbus+RS485+Troubleshooting+Quick+Reference.pdf` |
+| Course notes | `Modbus_RS485_Course_Notes-Laurens_Vanhoyland.pdf` |
+
+### RS485 hardware & Modbus specification (extra local PDFs)
+
+Folder: [`Manuale/Comunicare/RS485 proiect/documentatie/`](Manuale/Comunicare/RS485%20proiect/documentatie/)
+
+- [`modbusprotocolspecification.pdf`](Manuale/Comunicare/RS485%20proiect/documentatie/modbusprotocolspecification.pdf) — Modbus protocol specification copy  
+- [`MAX485.pdf`](Manuale/Comunicare/RS485%20proiect/documentatie/MAX485.pdf) — RS485 transceiver datasheet notes  
+- [`Chapter_13.pdf`](Manuale/Comunicare/RS485%20proiect/documentatie/Chapter_13.pdf), [`Modbus_RS485_Course_Notes-Laurens_Vanhoyland.pdf`](Manuale/Comunicare/RS485%20proiect/documentatie/Modbus_RS485_Course_Notes-Laurens_Vanhoyland.pdf)
+
+**Note:** If `Manuale/` is not in your GitHub clone, copy these folders from your archive or download manuals from FATEK / Modbus.org so links stay meaningful locally.
 
 ## Project Structure
 
