@@ -1,0 +1,47 @@
+# Fișier de configurare registrii FATEK
+# Format: REGISTRU=VALOARE
+# Pentru registrii D: D0=22, D1=100, etc.
+# Pentru registrii M: M0=true, M70=false, etc.
+# Liniile care încep cu # sunt comentarii și sunt ignorate
+
+# Data Registers D0-D10
+D0=22
+D1=0
+D2=0
+D3=0
+D4=500
+D5=600
+D6=700
+D7=800
+D8=900
+D9=1000
+D10=1100
+
+# Data Registers D46-D48
+D46=4600
+D47=4700
+D48=4800
+
+# Data Registers D57-D58
+D57=5700
+D58=5800
+
+# Discrete M Relays
+M0=true
+M70=false
+M71=true
+M72=true
+M73=true
+M74=false
+M75=true
+M76=false
+M77=true
+M78=false
+M79=true
+M93=false
+M94=true
+M95=false
+M97=true
+M98=false
+M120=true
+
